@@ -602,14 +602,14 @@
         <h2>Projects</h2>
         <div class="projects-grid">
             <div class="card">
-                <h3>DevOps CI-CD Pipeline Setup with Jenkins</h3>
+                <h3>End-to-End CI-CD Pipeline Setup with Jenkins</h3>
                 <p>This Project automates the entire software delivery process - from code checkout to Kubernetes deployment — including compile, tests, SonarQube analysis, Trivy scans (fs), Maven packaging, upload artifacts, Docker build, Trivy scans (image), Docker push.</p>
                 <p><b>Tools:</b> Jenkins, Maven, SonarQube, Nexus, Trivy, Docker, Kubeadm</p>
                 <a href="https://github.com/xrootms/DevOps-CI-CD-Pipeline" target="_blank">View GitHub Repo</a>
             </div>
 
             <div class="card">
-                <h3>Terraform Deployment CI/CD Pipeline with Jenkins & Checkov</h3>
+                <h3>Terraform CI/CD Pipeline with Jenkins & Checkov</h3>
                 <p>This project focuses on building a fully automated Infrastructure-as-Code deployment pipeline using Terraform, integrated with Jenkins CI/CD and Checkov security scanning.</p>
                 <p><b>Tools:</b> AWS, Terraform, Jenkins, Checkov</p>
                 <a href="https://github.com/xrootms/Terraform-Nexus-Sonarqube-K8s-setup-with-Jenkins" target="_blank">View GitHub Repo</a>
@@ -649,31 +649,15 @@
 
     <section id="resume">
     <h2>Resume</h2>
-    <div class="card" style="text-align:center;">
-        <p style="font-size: 19px; margin-bottom: 15px;">View my professional resume</p>
-        <button class="download-btn" onclick="openResumeModal()">View Resume</button>
+    <div class="card">
+        <iframe src="./resume.pdf#toolbar=0&navpanes=0" 
+                width="100%" 
+                height="800px" 
+                style="border: none;">
+        </iframe>
     </div>
-</section>
-
-<!-- Modal -->
-<div id="resumeModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:1000;">
-    <span onclick="closeResumeModal()" style="position:absolute; top:20px; right:40px; color:#fff; font-size:40px; cursor:pointer;">&times;</span>
-    <div style="padding:60px 20px; max-width:900px; margin:0 auto; background:#fff; height:90%; overflow-y:auto;">
-        <iframe src="./resume.pdf" width="100%" height="100%" style="border:none;"></iframe>
-    </div>
-</div>
-
-<script>
-function openResumeModal() {
-    document.getElementById('resumeModal').style.display = 'block';
-}
-
-function closeResumeModal() {
-    document.getElementById('resumeModal').style.display = 'none';
-}
-</script>
+    </section>
         
-   
 
     <!-- CONTACT -->
     <section id="contact">
